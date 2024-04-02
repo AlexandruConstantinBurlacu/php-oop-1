@@ -20,6 +20,12 @@ var_dump($movie1);
 $movie2 = new Movie("Fight Club", 1999, "Dramma", 8);
 var_dump($movie2);
 
+$movies = [
+    $movie1,
+    $movie2,
+];
+var_dump($movies);
+
 ?>
 
 <!DOCTYPE html>
