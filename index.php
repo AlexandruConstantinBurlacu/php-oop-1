@@ -15,21 +15,21 @@ class Movie{
 }
 
 $Movie1 = new Movie("Godzilla e Kong - Il nuovo impero", 2024, "Azione, Fantascienza, Avventura", 7);
-var_dump($Movie1);
+
 
 $Movie2 = new Movie("Fight Club", 1999, "Dramma", 8);
-var_dump($Movie2);
+
 
 $Movies = [
     $Movie1,
     $Movie2,
 ];
-var_dump($Movies);
+
 
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,6 +43,9 @@ var_dump($Movies);
         <?php 
         foreach ($Movies as $Movie) {
             echo "<li>". $Movie->titolo ."</li>";
+            echo "<li>". $Movie->anno ."</li>";
+            echo "<li>". $Movie->genere ."</li>";
+            echo "<li>". $Movie->voto ."</li>";
         }
         ?>
     </ul>
