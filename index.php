@@ -5,6 +5,13 @@ class Movie{
     public $anno;
     public $genere;
     public $voto;
+
+    public function __construct($titolo, $anno, $genere, $voto) {
+        $this->titolo = $titolo;
+        $this->anno = $anno;
+        $this->genere = $genere;
+        $this->voto = $voto;
+    }
 }
 
 ?>
