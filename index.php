@@ -14,17 +14,17 @@ class Movie{
     }
 }
 
-$movie1 = new Movie("Godzilla e Kong - Il nuovo impero", 2024, "Azione, Fantascienza, Avventura", 7);
-var_dump($movie1);
+$Movie1 = new Movie("Godzilla e Kong - Il nuovo impero", 2024, "Azione, Fantascienza, Avventura", 7);
+var_dump($Movie1);
 
-$movie2 = new Movie("Fight Club", 1999, "Dramma", 8);
-var_dump($movie2);
+$Movie2 = new Movie("Fight Club", 1999, "Dramma", 8);
+var_dump($Movie2);
 
-$movies = [
-    $movie1,
-    $movie2,
+$Movies = [
+    $Movie1,
+    $Movie2,
 ];
-var_dump($movies);
+var_dump($Movies);
 
 ?>
 
@@ -39,5 +39,12 @@ var_dump($movies);
     <h1>
         Movie Info
     </h1>
+    <ul>
+        <?php 
+        foreach ($Movies as $Movie) {
+            echo "<li>". $Movie->titolo ."</li>";
+        }
+        ?>
+    </ul>
 </body>
 </html>
