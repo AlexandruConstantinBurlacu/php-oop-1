@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: darkgray;
+
+    ul {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: lightgrey;
+        padding: 20px;
+        border-radius: 10px;
+
+        li {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            list-style-type: none;
+        }
+    }
+
+    
+}

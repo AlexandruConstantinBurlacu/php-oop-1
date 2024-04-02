@@ -34,6 +34,7 @@ $Movies = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>php-oop-1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>
@@ -42,10 +43,10 @@ $Movies = [
     <ul>
         <?php 
         foreach ($Movies as $Movie) {
-            echo "<li>". $Movie->titolo ."</li>";
-            echo "<li>". $Movie->anno ."</li>";
-            echo "<li>". $Movie->genere ."</li>";
-            echo "<li>". $Movie->voto ."</li>";
+            echo "<li><h4>Nome del film: </h4>". $Movie->titolo ."</li>";
+            echo "<li><h4>Data di uscita: </h4>". $Movie->anno ."</li>";
+            echo "<li><h4>Genere del film: </h4>". $Movie->genere ."</li>";
+            echo "<li><h4>Voto: </h4>". $Movie->voto ."</li>";
         }
         ?>
     </ul>
