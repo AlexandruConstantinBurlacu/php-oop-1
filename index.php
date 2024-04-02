@@ -14,6 +14,8 @@ class Movie{
     }
 }
 
+$movie1 = new Movie("Godzilla e Kong - Il nuovo impero", 2024, "Azione, Fantascienza, Avventura", 7)
+
 ?>
 
 <!DOCTYPE html>
