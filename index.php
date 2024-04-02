@@ -14,7 +14,11 @@ class Movie{
     }
 }
 
-$movie1 = new Movie("Godzilla e Kong - Il nuovo impero", 2024, "Azione, Fantascienza, Avventura", 7)
+$movie1 = new Movie("Godzilla e Kong - Il nuovo impero", 2024, "Azione, Fantascienza, Avventura", 7);
+var_dump($movie1);
+
+$movie2 = new Movie("Fight Club", 1999, "Dramma", 8);
+var_dump($movie2);
 
 ?>
 
